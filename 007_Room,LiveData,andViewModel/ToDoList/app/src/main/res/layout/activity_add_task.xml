@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddTaskActivity"
+    android:layout_margin="24dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:hint="@string/activity_add_task_name_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/activity_add_tast_priority"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:id="@+id/priority_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp">
+
+        <RadioButton
+            android:id="@+id/high_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/activity_add_task_priority_high"
+            android:background="@color/materialRed"
+            android:textColorHint="@android:color/white"
+            android:layout_weight="1"
+            android:checked="true"
+            app:buttonTint="@android:color/white"/>
+
+
+        <RadioButton
+            android:id="@+id/med_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/activity_add_task_priority_med"
+            android:background="@color/materialOrange"
+            android:layout_weight="1"
+            app:buttonTint="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/low_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/activity_add_task_priority_low"
+            android:background="@color/materialYellow"
+            android:layout_weight="1"
+            app:buttonTint="@android:color/white"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_btn_add"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="16dp"
+        android:onClick="onAddBtnClicked"/>
+
+
+</LinearLayout>

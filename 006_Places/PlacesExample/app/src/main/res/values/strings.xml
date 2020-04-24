@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Places Example</string>
+    <string name="places_api_key" translatable="false">YOUR_PLACES_API_KEY</string>
+</resources>

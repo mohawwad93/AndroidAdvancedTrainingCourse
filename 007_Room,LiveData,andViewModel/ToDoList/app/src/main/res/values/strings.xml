@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="activity_add_task_name_hint">Describe your task</string>
+    <string name="activity_add_tast_priority">Priority</string>
+    <string name="activity_add_task_priority_high">High</string>
+    <string name="activity_add_task_priority_med">Medium</string>
+    <string name="activity_add_task_priority_low">Low</string>
+    <string name="activity_add_btn_add">Add</string>
+    <string name="activity_add_task_title">Add a new task</string>
+</resources>
